@@ -126,12 +126,22 @@ static pthread_mutex_t              gPlugIn_StateMutex                  = PTHREA
 static UInt32                       gPlugIn_RefCount                    = 0;
 static AudioServerPlugInHostRef     gPlugIn_Host                        = NULL;
 
+#if IS_AUX
+#define                             kBox_UID                            "BlackHoleAux%ich_UID"
+#define                             kDevice_UID                         "BlackHoleAux%ich_UID"
+#define                             kDevice_ModelUID                    "BlackHoleAux%ich_ModelUID"
+#define                             kDevice_Name                        "BlackHole Aux %ich"
+#else
 #define                             kBox_UID                            "BlackHole%ich_UID"
+#define                             kDevice_UID                         "BlackHole%ich_UID"
+#define                             kDevice_ModelUID                    "BlackHole%ich_ModelUID"
+#define                             kDevice_Name                        "BlackHole %ich"
+#endif
+
 static CFStringRef                  gBox_Name                           = NULL;
 static Boolean                      gBox_Acquired                       = true;
 
-#define                             kDevice_UID                         "BlackHole%ich_UID"
-#define                             kDevice_ModelUID                    "BlackHole%ich_ModelUID"
+
 static pthread_mutex_t              gDevice_IOMutex                     = PTHREAD_MUTEX_INITIALIZER;
 static Float64                      gDevice_SampleRate                  = 44100.0;
 static UInt64                       gDevice_IOIsRunning                 = 0;
@@ -149,7 +159,6 @@ static const Float32                kVolume_MaxDB                       = 0.0;
 static Float32                      gVolume_Master_Value                = 1.0;
 static bool                         gMute_Master_Value                  = false;
 
-#define                             kDevice_Name                        "BlackHole %ich"
 #define                             kManufacturer_Name                  "Existential Audio Inc."
 
 #define                             kLatency_Frame_Size                 0

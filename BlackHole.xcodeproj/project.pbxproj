@@ -7,21 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		039FF2582341B6E800400D7A /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 039FF2572341B6E800400D7A /* CHANGELOG.md */; };
 		03FDCADA233F235500101681 /* BlackHole.icns in Resources */ = {isa = PBXBuildFile; fileRef = 03FDCAD9233F235500101681 /* BlackHole.icns */; };
 		03FDCADC233FAE0500101681 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 03FDCADB233FAE0500101681 /* LICENSE */; };
+		181F454727C38398001F1689 /* BlackHole.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D616EF215B8C82500D598BD /* BlackHole.c */; };
+		181F454927C38398001F1689 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6C8E45275E92B40030C104 /* Accelerate.framework */; };
+		181F454A27C38398001F1689 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7477EC157823CF00412279 /* CoreAudio.framework */; };
+		181F454B27C38398001F1689 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7477AC1578168D00412279 /* CoreFoundation.framework */; };
+		181F454D27C38398001F1689 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 03FDCADB233FAE0500101681 /* LICENSE */; };
+		181F454E27C38398001F1689 /* BlackHole.icns in Resources */ = {isa = PBXBuildFile; fileRef = 03FDCAD9233F235500101681 /* BlackHole.icns */; };
 		2D616EF415B8C82500D598BD /* BlackHole.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D616EF215B8C82500D598BD /* BlackHole.c */; };
 		2D7477AD1578168D00412279 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7477AC1578168D00412279 /* CoreFoundation.framework */; };
 		3D6C8E44275E92AE0030C104 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7477EC157823CF00412279 /* CoreAudio.framework */; };
 		3D6C8E46275E92B40030C104 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6C8E45275E92B40030C104 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		181F455627C38C7D001F1689 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D74779D1578162B00412279 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 181F454527C38398001F1689;
+			remoteInfo = "BlackHole copy";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		039FF2572341B6E800400D7A /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		03FDCAD9233F235500101681 /* BlackHole.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = BlackHole.icns; sourceTree = "<group>"; };
 		03FDCADB233FAE0500101681 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		03FEA4BB233D27770005D277 /* BlackHole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlackHole.h; sourceTree = "<group>"; };
-		2D616EF115B8C82500D598BD /* BlackHole-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BlackHole-Info.plist"; sourceTree = "<group>"; };
+		181F455427C38398001F1689 /* BlackHoleAux.driver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackHoleAux.driver; sourceTree = BUILT_PRODUCTS_DIR; };
+		181F455527C38398001F1689 /* BlackHoleAux-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlackHoleAux-Info.plist"; sourceTree = "<group>"; };
+		2D616EF115B8C82500D598BD /* BlackHole-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlackHole-Info.plist"; sourceTree = "<group>"; };
 		2D616EF215B8C82500D598BD /* BlackHole.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BlackHole.c; sourceTree = "<group>"; };
 		2D7477A91578168D00412279 /* BlackHole.driver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackHole.driver; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D7477AC1578168D00412279 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -33,6 +49,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		181F454827C38398001F1689 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181F454927C38398001F1689 /* Accelerate.framework in Frameworks */,
+				181F454A27C38398001F1689 /* CoreAudio.framework in Frameworks */,
+				181F454B27C38398001F1689 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2D7477A61578168D00412279 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,6 +75,7 @@
 		2D616EF015B8C82500D598BD /* BlackHole */ = {
 			isa = PBXGroup;
 			children = (
+				181F455527C38398001F1689 /* BlackHoleAux-Info.plist */,
 				03FDCAD9233F235500101681 /* BlackHole.icns */,
 				2D616EF115B8C82500D598BD /* BlackHole-Info.plist */,
 				03FEA4BB233D27770005D277 /* BlackHole.h */,
@@ -62,7 +89,6 @@
 			children = (
 				2DA8FA1515FEAAB000F04B50 /* README.md */,
 				03FDCADB233FAE0500101681 /* LICENSE */,
-				039FF2572341B6E800400D7A /* CHANGELOG.md */,
 				2D616EF015B8C82500D598BD /* BlackHole */,
 				2D7477AB1578168D00412279 /* Frameworks */,
 				2D7477AA1578168D00412279 /* Products */,
@@ -73,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				2D7477A91578168D00412279 /* BlackHole.driver */,
+				181F455427C38398001F1689 /* BlackHoleAux.driver */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +119,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		181F454527C38398001F1689 /* BlackHoleAux */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 181F455027C38398001F1689 /* Build configuration list for PBXNativeTarget "BlackHoleAux" */;
+			buildPhases = (
+				181F454627C38398001F1689 /* Sources */,
+				181F454827C38398001F1689 /* Frameworks */,
+				181F454C27C38398001F1689 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlackHoleAux;
+			productName = AudioNULLDriver;
+			productReference = 181F455427C38398001F1689 /* BlackHoleAux.driver */;
+			productType = "com.apple.product-type.bundle";
+		};
 		2D7477A81578168D00412279 /* BlackHole */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D7477B51578168D00412279 /* Build configuration list for PBXNativeTarget "BlackHole" */;
@@ -103,6 +147,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				181F455727C38C7D001F1689 /* PBXTargetDependency */,
 			);
 			name = BlackHole;
 			productName = AudioNULLDriver;
@@ -116,11 +161,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1220;
-				TargetAttributes = {
-					2D7477A81578168D00412279 = {
-						DevelopmentTeam = Q5C99V536K;
-					};
-				};
 			};
 			buildConfigurationList = 2D7477A01578162B00412279 /* Build configuration list for PBXProject "BlackHole" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -136,24 +176,41 @@
 			projectRoot = "";
 			targets = (
 				2D7477A81578168D00412279 /* BlackHole */,
+				181F454527C38398001F1689 /* BlackHoleAux */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		181F454C27C38398001F1689 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181F454D27C38398001F1689 /* LICENSE in Resources */,
+				181F454E27C38398001F1689 /* BlackHole.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2D46CA7A17D6ADC500049D4A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				03FDCADC233FAE0500101681 /* LICENSE in Resources */,
 				03FDCADA233F235500101681 /* BlackHole.icns in Resources */,
-				039FF2582341B6E800400D7A /* CHANGELOG.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		181F454627C38398001F1689 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181F454727C38398001F1689 /* BlackHole.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2D7477A51578168D00412279 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,7 +221,78 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		181F455727C38C7D001F1689 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 181F454527C38398001F1689 /* BlackHoleAux */;
+			targetProxy = 181F455627C38C7D001F1689 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		181F455127C38398001F1689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=0",
+					"IS_AUX=1",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/BlackHole/BlackHoleAux-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Audio/Plug-Ins/HAL";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 0.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = audio.existential.BlackHole2ch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = driver;
+			};
+			name = Release;
+		};
+		181F455227C38398001F1689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+					"IS_AUX=1",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/BlackHole/BlackHoleAux-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Audio/Plug-Ins/HAL";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 0.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = audio.existential.BlackHole2ch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = driver;
+			};
+			name = Debug;
+		};
+		181F455327C38398001F1689 /* Debug-Opt */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+					"IS_AUX=1",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/BlackHole/BlackHoleAux-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Audio/Plug-Ins/HAL";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 0.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = audio.existential.BlackHole2ch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = driver;
+			};
+			name = "Debug-Opt";
+		};
 		2D7477A21578162B00412279 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -330,15 +458,16 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				DEVELOPMENT_TEAM = Q5C99V536K;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"DEBUG=0",
+					"IS_AUX=0",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/BlackHole/BlackHole-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Audio/Plug-Ins/HAL";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MARKETING_VERSION = 0.3.0;
+				MARKETING_VERSION = 0.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = audio.existential.BlackHole2ch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = driver;
@@ -350,15 +479,16 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				DEVELOPMENT_TEAM = Q5C99V536K;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"DEBUG=1",
+					"IS_AUX=0",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/BlackHole/BlackHole-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Audio/Plug-Ins/HAL";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MARKETING_VERSION = 0.3.0;
+				MARKETING_VERSION = 0.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = audio.existential.BlackHole2ch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = driver;
@@ -370,15 +500,16 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				DEVELOPMENT_TEAM = Q5C99V536K;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"DEBUG=1",
+					"IS_AUX=0",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/BlackHole/BlackHole-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Audio/Plug-Ins/HAL";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MARKETING_VERSION = 0.3.0;
+				MARKETING_VERSION = 0.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = audio.existential.BlackHole2ch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = driver;
@@ -388,6 +519,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		181F455027C38398001F1689 /* Build configuration list for PBXNativeTarget "BlackHoleAux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				181F455127C38398001F1689 /* Release */,
+				181F455227C38398001F1689 /* Debug */,
+				181F455327C38398001F1689 /* Debug-Opt */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D7477A01578162B00412279 /* Build configuration list for PBXProject "BlackHole" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
