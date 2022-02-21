@@ -1,6 +1,6 @@
 # BlackHole with "Aux": 2 Virtual Audio Drivers
 ![Platform:macOS](https://img.shields.io/badge/platform-macOS-lightgrey)
-![GitHub](https://img.shields.io/github/v/release/yuriteixeira/BlackHole)
+[![GitHub](https://img.shields.io/github/v/release/yuriteixeira/BlackHole)](https://github.com/yuriteixeira/BlackHoleWithAux/releases/latest)
 [![GitHub](https://img.shields.io/github/license/yuriteixeira/BlackHole)](LICENSE)
 
 This is a fork from [ExistentialAudio/BlackHole](https://github.com/ExistentialAudio/BlackHole), which is a modern MacOS virtual audio driver that allows applications to pass audio to other applications with zero additional latency.
@@ -11,7 +11,7 @@ The main difference of it is **to provide an extra auxiliar audio interface (Bla
 
 # Installing 
 
-1. Download the zip files `BlackHole.driver.zip` and `BlackHoleAux.driver.zip` from the latest release
+1. [Download the zip files `BlackHole.driver.zip` and `BlackHoleAux.driver.zip` from the **latest release**](https://github.com/yuriteixeira/BlackHoleWithAux/releases/latest)
 2. Unzip them and copy the folders `BlackHole.driver` and `BlackHoleAux.driver` to `/Library/Audio/Plug-Ins/HAL/` (your password may be required)
 3. Open the `Terminal` app and run `sudo launchctl kickstart -kp system/com.apple.audio.coreaudiod`
 
